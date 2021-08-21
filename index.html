@@ -8,6 +8,17 @@
   
   <title>Frontend Mentor | 3-column preview card component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,22 +26,74 @@
   </style>
 </head>
 <body>
-  
-  Sedans
-  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-  or on your next road trip.
-
-  SUVs
-  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-  and off-road adventures.
-
-  Luxury
-  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-  rental and arrive in style.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-desktop is-gapless">
+        <div class="column">
+          <div class="c-card c-card--primary">
+            <div class="c-card__header">
+              <figure>
+                <img src="./images/icon-sedans.svg" alt="sedans">
+              </figure>
+            </div>
+            <div class="c-card__body">
+              <h1 class="title is-1">SEDANS</h1>
+              <p>
+                Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+                or on your next road trip.
+              </p>
+            </div>
+            <div class="c-card__footer">
+              <button class="button has-text-weight-semibold">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="c-card c-card--secondary">
+            <div class="c-card__header">
+              <figure>
+                <img src="./images/icon-suvs.svg" alt="suvs">
+              </figure>
+            </div>
+            <div class="c-card__body">
+              <h1 class="title is-1">SUVS</h1>
+              <p>
+                Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+                and off-road adventures.
+              </p>
+            </div>
+            <div class="c-card__footer">
+              <button class="button has-text-weight-semibold">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="c-card c-card--info">
+            <div class="c-card__header">
+              <figure>
+                <img src="./images/icon-luxury.svg" alt="luxury">
+              </figure>
+            </div>
+            <div class="c-card__body">
+              <h1 class="title is-1">LUXURY</h1>
+              <p>
+                Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+                rental and arrive in style.
+              </p>
+            </div>
+            <div class="c-card__footer">
+              <button class="button has-text-weight-semibold">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Nathanael</a>.
+    </div>
+  </footer>
 </body>
 </html>

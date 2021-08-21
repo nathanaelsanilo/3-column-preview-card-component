@@ -1,0 +1,82 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+html, body {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+}
+
+.button {
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    outline: none;
+    border: none;
+}
+
+/* .columns .c-card:first-child {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.columns .c-card:last-child {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+} */
+
+.c-card {
+    min-height: 500px;
+}
+
+.c-card__header {
+    padding: 2.5rem 3rem;
+}
+.c-card__body {
+    padding: 1.2rem 3rem;
+    min-height: 250px;
+}
+.c-card__footer {
+    padding: 1rem 3rem;
+}
+
+.c-card--primary {
+    background-color: var(--bright-orange);
+}
+
+.c-card--primary .button {
+    color: var(--bright-orange);
+}
+
+.c-card--primary .c-card__body,
+.c-card--secondary .c-card__body,
+.c-card--info .c-card__body {
+    color: #fff;
+}
+
+.c-card--primary .title,
+.c-card--secondary .title,
+.c-card--info .title {
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.c-card--secondary {
+    background-color: var(--dark-cyan);
+}
+
+.c-card--secondary .button {
+    color: var(--dark-cyan);
+}
+
+.c-card--info {
+    background-color: var(--very-dark-cyan);
+}
+
+.c-card--info .button {
+    color: var(--very-dark-cyan);
+}
